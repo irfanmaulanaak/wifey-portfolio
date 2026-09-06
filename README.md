@@ -23,7 +23,7 @@ Then open `http://localhost:8000`.
 
 ## Deploy to Cloudflare Workers
 
-The workflow deploys `dist/` to `wifey-portfolio.<your-subdomain>.workers.dev` whenever `main` is updated.
+The workflow deploys `dist/` to `portfolio.<your-subdomain>.workers.dev` whenever `main` is updated.
 
 1. In Cloudflare, create an API token with `Account > Workers Scripts > Edit` for the target account.
 2. In GitHub, open **Settings > Secrets and variables > Actions**.
