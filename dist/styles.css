@@ -165,6 +165,33 @@ body.viewing-asset { overflow: hidden; }
 .result-row > span { position: relative; display: flex; min-width: 0; min-height: 78px; flex-direction: column; justify-content: flex-end; padding: .75rem; overflow: hidden; border: 1px solid var(--line); color: #5b5752; background: rgba(255,255,255,.27); font-size: .72rem; line-height: 1.25; }
 .result-row > span::before { content: ""; position: absolute; top: 0; left: 0; width: 42%; height: 3px; background: var(--ink); }
 .result-row strong { display: block; margin-bottom: .2rem; color: var(--ink); font-family: "Manrope", sans-serif; font-size: 1.35rem; font-weight: 600; line-height: 1; }
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin: 1.4rem 0 0; }
+.project-links-label { margin-right: .35rem; color: #756f68; font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.project-links a { display: inline-flex; align-items: center; gap: .3rem; padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink); background: rgba(255,255,255,.27); font-size: .75rem; text-decoration: none; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.project-links a:hover { color: white; background: var(--ink); border-color: var(--ink); }
+.project-links a b { font-weight: 400; }
+.case-details + .case-details { margin-top: 0; border-top: 0; }
+.articles-block { padding: .25rem 0 1.2rem; }
+.articles-intro { margin: 0 0 .9rem; max-width: 560px; color: #4d4a46; font-size: .84rem; line-height: 1.5; }
+.table-scroll { overflow-x: auto; }
+.articles-table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+.articles-table th { padding: .5rem 0; border-bottom: 1px solid var(--ink); color: #756f68; font-size: .66rem; font-weight: 600; letter-spacing: .08em; text-align: left; text-transform: uppercase; }
+.articles-table td { padding: .55rem .8rem .55rem 0; border-bottom: 1px solid var(--line); color: #4d4a46; vertical-align: top; line-height: 1.4; }
+.articles-table td:last-child { padding-right: 0; white-space: nowrap; }
+.articles-table a { color: var(--ink); text-decoration: none; }
+.articles-table a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.rank-tag { display: inline-block; padding: .2rem .55rem; border: 1px solid var(--line); border-radius: 999px; font-size: .68rem; color: #5b5752; }
+.articles-subhead { margin: 1.4rem 0 .5rem; color: #756f68; font-size: .68rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.awards-list { margin: 0; padding: 0; list-style: none; font-size: .84rem; }
+.awards-list li { display: grid; grid-template-columns: 48px 1fr auto; gap: .8rem; align-items: baseline; padding: .5rem 0; border-bottom: 1px solid var(--line); color: #4d4a46; }
+.awards-list span { color: #756f68; font-size: .72rem; }
+.awards-list em { font-style: normal; font-size: .72rem; color: #5b5752; white-space: nowrap; }
+.awards-list a { color: var(--ink); text-decoration: none; }
+.awards-list a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.articles-links { display: flex; flex-wrap: wrap; gap: .5rem 1.4rem; margin: 1rem 0 0; font-size: .8rem; }
+.articles-links a { color: var(--ink); text-decoration: underline; text-underline-offset: .3em; text-decoration-thickness: 1px; }
+.articles-links a b { font-weight: 400; }
+.intro-quote { margin: 0 0 1.4rem; padding-left: 1rem; border-left: 2px solid var(--ink); color: var(--ink); font-family: "Manrope", sans-serif; font-size: 1.05rem; font-style: italic; line-height: 1.5; }
 .case-details { margin-top: 1.25rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .case-details summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 0; font-size: .78rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; list-style: none; }
 .case-details summary::-webkit-details-marker { display: none; }
@@ -258,6 +285,8 @@ footer > a:last-child { text-underline-offset: .3em; }
   .contact { grid-template-columns: .7fr 1.3fr; }
   .contact-copy { padding: 3rem; }
   .contact-links a { grid-template-columns: 1fr auto; }
+  .awards-list li { grid-template-columns: 48px 1fr; }
+  .awards-list em { grid-column: 2; }
   .contact-links a > span:first-child { grid-column: 1 / -1; }
 }
 
