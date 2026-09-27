@@ -265,6 +265,14 @@ footer > a:last-child { text-underline-offset: .3em; }
 .counter-visual > span, .impact strong .counter-visual > span { grid-area: 1 / 1; margin: 0; font: inherit; }
 @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
 
+/* 3D accents (scene3d.js). They fade in once their model has loaded. */
+.scene-canvas { position: absolute; display: block; pointer-events: none; opacity: 0; transition: opacity 1.2s ease; }
+.scene-canvas.is-ready { opacity: 1; }
+.scene-hero { inset: 0; width: 100%; height: 100%; z-index: 1; }
+.experience > .scene-growth { position: absolute; z-index: 1; top: clamp(2rem, 5vw, 4.5rem); right: max(1.25rem, calc((100% - var(--max)) / 2)); width: min(34vw, 440px); height: min(27vw, 340px); }
+.contact-copy { position: relative; }
+.scene-chain { top: clamp(.5rem, 2vw, 2rem); right: clamp(.5rem, 3vw, 3rem); width: min(30vw, 360px); height: min(22vw, 260px); }
+
 @media (max-width: 920px) {
   .desktop-nav { display: none; }
   .site-header { grid-template-columns: 1fr 1fr; }
@@ -288,6 +296,7 @@ footer > a:last-child { text-underline-offset: .3em; }
   .awards-list li { grid-template-columns: 48px 1fr; }
   .awards-list em { grid-column: 2; }
   .contact-links a > span:first-child { grid-column: 1 / -1; }
+  .experience > .scene-growth { opacity: .55; }
 }
 
 @media (max-width: 620px) {
@@ -317,6 +326,9 @@ footer > a:last-child { text-underline-offset: .3em; }
   .contact h2 { font-size: clamp(3rem, 14vw, 4.5rem); }
   .contact-links a { font-size: .88rem; overflow-wrap: anywhere; }
   footer { align-items: flex-start; flex-direction: column; }
+  .experience > .scene-growth { top: 7.5rem; width: 64vw; height: 40vw; opacity: 1; }
+  .experience .section-label { margin-bottom: calc(40vw + 1.5rem); }
+  .scene-chain { width: 42vw; height: 36vw; }
 }
 
 @media (prefers-reduced-motion: reduce) {

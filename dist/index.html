@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
     <script src="./motion.js" defer></script>
+    <script type="importmap">{ "imports": { "three": "./vendor/three/three.module.min.js", "three/addons/": "./vendor/three/addons/" } }</script>
+    <script type="module" src="./scene3d.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -35,6 +37,7 @@
       <section class="hero dark-panel" id="top">
         <div class="grain grain-one" aria-hidden="true"></div>
         <div class="grain grain-two" aria-hidden="true"></div>
+        <canvas class="scene-canvas scene-hero" aria-hidden="true"></canvas>
         <div class="hero-copy">
           <p class="eyebrow reveal" data-i18n="heroEyebrow">Jakarta, Indonesia · Available for opportunities</p>
           <h1 class="reveal" data-i18n="heroTitle">Search deserves<br />a <em>human</em> touch.</h1>
@@ -822,6 +825,7 @@
 
       <section class="experience section dark-panel" id="experience">
         <div class="grain grain-three" aria-hidden="true"></div>
+        <canvas class="scene-canvas scene-growth" aria-hidden="true"></canvas>
         <div class="section-label reveal"><span>03</span> <span data-i18n="experienceLabel">Experience</span></div>
         <div class="experience-heading reveal">
           <h2 data-i18n="experienceTitle">Four years of<br /><em>searching smarter.</em></h2>
@@ -887,6 +891,7 @@
           <img src="./assets/nadhifa.webp" alt="Portrait of Nadhifa Arnesya" loading="lazy" width="686" height="769" />
         </div>
         <div class="contact-copy">
+          <canvas class="scene-canvas scene-chain" aria-hidden="true"></canvas>
           <p class="eyebrow reveal" data-i18n="contactEyebrow">Have a project in mind?</p>
           <h2 class="reveal" data-i18n="contactTitle">Let’s create<br /><em>impact together.</em></h2>
           <div class="contact-links reveal">

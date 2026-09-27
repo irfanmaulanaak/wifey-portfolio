@@ -17,7 +17,10 @@ Then open `http://localhost:8000`.
 - `dist/index.html` — site content and accessible structure
 - `dist/styles.css` — responsive editorial design
 - `dist/script.js` — bilingual copy, project filtering, and reveal transitions
-- `dist/assets/` — portfolio imagery and downloadable documents
+- `dist/scene3d.js` — animated 3D accents (magnifier, growth chart, chain link) rendered with three.js
+- `dist/assets/` — portfolio imagery, downloadable documents, and the 3D models in `assets/3d/`
+- `dist/vendor/three/` — local copy of three.js 0.170.0 (MIT)
+- `assets-src/portfolio-3d.blend` — Blender source for the 3D models (scene `PortfolioAssets`)
 - `wrangler.jsonc` — Cloudflare Workers static-assets configuration
 - `.github/workflows/deploy-cloudflare.yml` — automatic Workers deployment
 
