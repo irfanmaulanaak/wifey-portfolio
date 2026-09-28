@@ -17,6 +17,7 @@ Then open `http://localhost:8000`.
 - `dist/index.html` — site content and accessible structure
 - `dist/styles.css` — responsive editorial design
 - `dist/script.js` — bilingual copy, project filtering, and reveal transitions
+- `dist/keywords.js` — hero search bar that types her specialities, the scrolling keyword strip, and project tags that light up with matching capabilities
 - `dist/scene3d.js` — animated 3D accents (magnifier, growth chart, chain link) rendered with three.js
 - `dist/assets/` — portfolio imagery, downloadable documents, and the 3D models in `assets/3d/`
 - `dist/vendor/three/` — local copy of three.js 0.170.0 (MIT)

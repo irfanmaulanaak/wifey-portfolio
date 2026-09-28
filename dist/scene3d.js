@@ -146,7 +146,7 @@ async function heroMagnifier() {
   function place() {
     const view = stage.halfView();
     const narrow = stage.width < 700;
-    pivot.userData.base = new THREE.Vector3(view.x * (narrow ? 0.5 : 0.52), view.y * (narrow ? -0.4 : 0.2), 0);
+    pivot.userData.base = new THREE.Vector3(view.x * (narrow ? 0.5 : 0.52), view.y * (narrow ? -0.12 : 0.2), 0);
     pivot.userData.size = narrow ? 0.62 : Math.min(1.35, view.x / 5.2);
   }
   stage.onResize = place;
