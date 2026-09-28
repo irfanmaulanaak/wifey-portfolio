@@ -146,7 +146,7 @@ async function heroMagnifier() {
   function place() {
     const view = stage.halfView();
     const narrow = stage.width < 700;
-    pivot.userData.base = new THREE.Vector3(view.x * (narrow ? 0.5 : 0.52), view.y * (narrow ? -0.12 : 0.2), 0);
+    pivot.userData.base = new THREE.Vector3(view.x * (narrow ? 0.3 : 0.52), view.y * (narrow ? -0.12 : 0.2), 0);
     pivot.userData.size = narrow ? 0.62 : Math.min(1.35, view.x / 5.2);
   }
   stage.onResize = place;
@@ -157,7 +157,7 @@ async function heroMagnifier() {
     const scroll = scrollProgress(hero);
     const base = pivot.userData.base;
     // A slow figure-eight, like a lens scanning a results page.
-    const sweepX = still ? 0 : Math.sin(t * 0.45) * 0.6;
+    const sweepX = still ? 0 : Math.sin(t * 0.45) * (stage.width < 700 ? 0.2 : 0.6);
     const sweepY = still ? 0 : Math.sin(t * 0.9) * 0.25;
     pivot.position.set(
       base.x + sweepX + pointer.x * 0.35 + (1 - intro) * 2.5,
